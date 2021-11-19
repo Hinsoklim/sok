@@ -15,11 +15,11 @@ span{
     color: rgb(255, 5, 88);
 }
 
-nav,.center-page ul,.right-page ul,.logo,.head-container,.head-btn{
+nav,.center-page ul,.right-page ul,.logo,.head-container,.head-btn,.image,.all-card{
     display: flex;
 }
 
-.logo,.head-container,.head-btn{
+.logo,.head-container,.head-btn,.image{
     justify-content: center;
     align-items: center;
 }
@@ -28,6 +28,8 @@ nav{
     justify-content: space-around;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-image: linear-gradient(#fff,rgb(252, 218, 235));
+    position: sticky;
+    top: 0;
 }
 
 nav{
@@ -106,4 +108,13 @@ ul li a{
 }
 .head-btn .btn-right:hover{
     background: deeppink;
+}
+.card{
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background:orange;
+}
+
+.image{
+    margin: 15px;
 }
