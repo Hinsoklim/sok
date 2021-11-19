@@ -1,57 +1,109 @@
-/* @media(orientation: landscape){
-    body{
-        background: orange;
-    }
-}
-@media(orientation: portrait){
-    body{
-        background: palevioletred;
-    }
-} */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-body {
+body{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
-.container {
-    width: 80%;
-    margin: 0 auto;
+
+.logo a{
+    color: green;
+    font-family: cursive;
+    font-size: larger;
+}
+span{
+    color: rgb(255, 5, 88);
+}
+
+nav,.center-page ul,.right-page ul,.logo,.head-container,.head-btn{
     display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
 }
-.card {
-    box-sizing: border-box;
-    padding: 10px;
-    border-radius: 4px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+.logo,.head-container,.head-btn{
+    justify-content: center;
+    align-items: center;
 }
-.card-title {
-    padding: 10px;
+
+nav{
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-image: linear-gradient(#fff,rgb(252, 218, 235));
 }
-.card-title h1 {
-    font-weight: 400;
+
+nav{
+    background: #eee;
+}
+
+ul li{
+    margin: 0 1.5rem;
+    list-style: none;
+    
+}
+.active a,ul li a:hover{
+    color: red;
+}
+ul li a,.logo a{
+    text-decoration: none;
+}
+ul li a{
+    color: gray;
+}
+
+.head-container{
+    background-image: url(../image/picture-1.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+.head-text h1,.head-text p{
     margin: 0;
 }
-.bt {
-    border-top: 3px solid #6d13a8;
+
+.head-text h1,.head-text p,.h1{
+    margin: auto;
+    width: 50%;
 }
-.card-body {
+
+
+.head-text h1,.head-text p,h1{
+    text-align: center;
+}
+
+.h1{
+    border-radius: 40px;
+}
+
+.head-text h1{
+    color: red;
+    font-size: 3em;
+}
+.head-btn{
+    margin-top: 10px;
+}
+.head-btn button{
+    width: 10vw;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+.head-btn button,.h1 h1{
     padding: 10px;
-    line-height: 1.4;
 }
-@media(orientation: landscape) {
-   .card {
-       width: 49%;
-   }
+
+.head-btn button{
+    color: black;
 }
-@media(orientation: portrait) {
-   .container {
-       flex-wrap: wrap;
-   }
-  .card {
-      width: 100%;
-      margin-top: 10px;
-  }
+
+.head-btn button{
+    border: 2px solid blue;
+}
+
+.head-btn .btn-left:hover,.head-btn .btn-right:hover,.h1 h1{
+    color: #fff;
+}
+.head-btn .btn-left:hover,.h1{
+    background:orange;
+}
+.head-btn .btn-right:hover{
+    background: deeppink;
 }
